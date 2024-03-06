@@ -1,0 +1,7 @@
+---
+name: FakePlayers
+version: 4.1.3
+main: void\FakePlayers\Main
+api: 4.0.0
+src-namespace-prefix: void\FakePlayers
+...
