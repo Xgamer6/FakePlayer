@@ -9,6 +9,6 @@ use pocketmine\plugin\PluginBase;
 class Main extends PluginBase {
 
     public function onEnable(): void {
-        $this->getLogger()->info("§aPlugin enabled!");
+        $this->getLogger()->info("Plugin aktiviert!");
     }
 }
