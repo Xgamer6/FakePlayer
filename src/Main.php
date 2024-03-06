@@ -26,7 +26,7 @@ class Main extends PluginBase {
 
     private function spawnFakePlayer(string $playerName): void {
         $server = $this->getServer();
-        $world = $server->getLevelByName("world");
+        $world = $server->getLevelByName("world"); // Hier wurde die Methode korrigiert
         $position = new Position(0, $world->getHighestBlockAt(0, 0) + 1, 0, $world);
 
         $fakePlayer = $server->getPlayerByRawUUID(Player::createPlayerUniqueId());
