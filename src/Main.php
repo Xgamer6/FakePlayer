@@ -26,7 +26,8 @@ class Main extends PluginBase {
 
     private function spawnFakePlayer(string $playerName): void {
         $server = $this->getServer();
-        $position = new Position(0, $server->getWorldByName("world")->getHighestBlockAt(0, 0) + 1, 0, $server->getWorldByName("world"));
+        $world = $server->getLevelByName("world");
+        $position = new Position(0, $world->getHighestBlockAt(0, 0) + 1, 0, $world);
 
         $fakePlayer = $server->getPlayerByRawUUID(Player::createPlayerUniqueId());
         $fakePlayer->setNameTag($playerName);
